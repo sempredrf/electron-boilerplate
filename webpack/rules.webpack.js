@@ -26,5 +26,15 @@ module.exports = [
     options: {
       name: '[path][name].[ext]',
     },
-  }
+  },
+  {
+    test: /\.m?js/,
+    type: "javascript/auto",
+  },
+  {
+    test: /\.m?js/,
+    resolve: {
+      fullySpecified: false,
+    },
+  },
 ]
